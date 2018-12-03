@@ -1,0 +1,242 @@
+body {
+    font-family: 'Quicksand' , sans-serif;
+    font-size: 16px;
+    background-image: url(../images/background.png);
+    margin: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+}
+
+
+
+#logo{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 300px;
+    float: left;
+    background-color: #4aaaa5;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#rightlinks{
+    text-align: right;
+    padding-top: 15px;
+}
+
+#rightlinks ul > li{
+    vertical-align: middle;
+}
+
+#rightlinks li::after{
+    content: "|";
+    float: right;
+    color: #797979;
+}
+
+#rightlinks li:last-child::after{
+    display: none;
+}
+
+.container{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid grey;
+    overflow: auto;
+}
+
+.wrapper{   
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content{
+    max-width: 860px;
+    margin-top: 20px;
+    padding:50px;
+}
+
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    border-top: 5px solid #4aaaa5;
+    text-align: center;
+    position: relative;
+}
+
+#copyright{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+img{
+    float: left;
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#portfolio:hover{
+    transform: scale(0.9, 0.9);
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    line-height: 55px;
+    float: left;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:hover{
+    color: red;
+}
+
+a:focus{
+    color: orange;
+    background-color: royalblue;
+}
+
+a:active{
+    color: green;
+    background-color: beige;
+}
+
+h1 {
+    color: #4aaaa5;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 5px; /* Add a top margin */
+    margin-bottom: 15px; /* Bottom margin */
+    resize: vertical /* Added a little extra from researching online */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: blue;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+    .nav{
+        height: 160px;
+    }
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+    #logo{
+        width: 100%
+    }
+    #rightlinks{
+        text-align: center;
+        display: inline-table;
+        float: none;
+        width: 100%;
+    }
+    #rightlinks ul{
+        display: inline-table;
+        float: none;
+        text-align: center;
+    }
+    .li{
+        display: inline;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    #content{
+        width: inherit;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px){
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+    #rightlinks{
+        text-align: center;
+        float: right;
+        width: auto;
+        padding-right: 10px
+    }
+    .li{
+        display: inline;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    #content{
+        width: inherit;
+    }
+}      
+
+@media screen and (min-width: 769px) and (max-width: 980px){
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+    #rightlinks{
+        float: right;
+        width: auto;
+        padding-right: 10px;
+    }
+    .li{
+        display: inline;
+    }
+    .container{
+        width: 100%;
+    }
+    #content{
+        width: inherit;
+    }
+}

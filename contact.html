@@ -1,0 +1,75 @@
+<!-- CSS Typography -->
+
+<!-- STUDENTS: Change the font family in our document's p-tags to Lucida Sans Pro. Follow the directions for each tag. -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <title>Week 2 - Responsive Portfolio | Contact</title>
+
+  <!-- Add a CSS Reference Here! -->
+
+
+</head>
+
+<body>
+  <div>
+    <header class="nav">
+      <div class="title wrapper">
+        <h1 id="logo">Ves M.</h1>
+      </div>
+      <div class="wrapper" id="rightlinks">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <div class="container" id="content">
+      <div class="content">
+        <h1>Contact</h1>
+
+        <hr>
+
+        <h3>Here's How To Contact Me</h3>
+
+        <!-- Based on example on W3 Schools-->
+        <form class="form">
+          <!-- Defining the form and it's class -->
+          <label for="fname">First Name</label> <!-- Input label -->
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <!-- Class and ID for CSS, and assigning a placeholder -->
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">USA</option> <!-- Dropdown -->
+            <option value="usa">Canada</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit"> <!-- Submit button -->
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="copyright">
+        <h4>Copyright &copy;</h4>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
